@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
 import Logo from './logo';
-import SearchBar from './searchbar';
+import SearchBar from './searchBar';
 import RecentPosts from './recentPosts';
 
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <div>
-          logo
-          <Logo />
-          <SearchBar />
-          <RecentPosts />fg
-        </div>
+      <div className='home'>
+        <Logo></Logo>
+        <SearchBar></SearchBar>
+        <RecentPosts/>
       </div>
     );
   }
